@@ -7,6 +7,7 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         prompt: ['Prompt', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif']
       },
       colors: {
         primary: "#fea928",
