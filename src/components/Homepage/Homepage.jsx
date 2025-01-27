@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
 return (
@@ -14,9 +15,10 @@ return (
         <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center text-white">
             <h1 className="font-poppins font-normal text-2xl">Bali Vibes Tour</h1>
                 <p className="mt-4 font-playfair font-semibold text-3xl">Your Dream Bali Experience Starts Here</p>
+                <Link to="/Bali-Tour-Package">
                     <button className="mt-6 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-6 rounded-lg">
-                    Tour Package
-                </button>
+                    Tour Package</button>
+                </Link>
             </div>
         </div>
 
@@ -44,7 +46,9 @@ return (
                         we provide personalized tour packages, exciting activities, and seamless travel services. Whether you're seeking relaxation on Bali's pristine beaches, an exploration of its unique cultural heritage,
                         or thrilling adventures, Bali Vibes Tour is here to make your dream vacation a reality.
                         </p>
+                        <Link to="/Bali-Tour-Package">
                     <button className="mt-6 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-6 rounded-lg">Explore Our Tour</button>
+                    </Link>
                 </div>
             </div>
         </section>
@@ -61,8 +65,9 @@ return (
                 <img src="/src/assets/Homepage/Gambar3.jpg" alt="Tour Package" className="w-full rounded-lg shadow-lg" />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white group-hover:bg-opacity-50">
                         <h3 className="text-xl font-bold">Tour Package</h3>
-                        <a href="/Bali-Tour-Package" className="mt-4"></a>
-                    <button className="mt-4 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg">View Tours</button>
+                        <Link to="/Bali-Tour-Package">
+                    <button className="mt-4 bg-[#006666] hover:bg-[#005555] text-white font-semibold py-2 px-4 rounded-lg">View Tours</button>
+                    </Link>
                 </div>
             </div>
 
@@ -70,7 +75,9 @@ return (
                 <img src="/src/assets/Homepage/Gambar4.jpg" alt="Activities" className="w-full rounded-lg shadow-lg" />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white group-hover:bg-opacity-50">
                         <h3 className="text-xl font-bold">Activities</h3>
+                        <Link to="/Bali-Activities">
                     <button className="mt-4 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg">View Tours</button>
+                    </Link>
                 </div>
             </div>
 
@@ -78,7 +85,9 @@ return (
                 <img src="/src/assets/Homepage/Gambar5.jpg" alt="Adventure" className="w-full rounded-lg shadow-lg" />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white group-hover:bg-opacity-50">
                         <h3 className="text-xl font-bold">Adventure</h3>
+                        <Link to="/FastBoat">
                     <button className="mt-4 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg">View Tours</button>
+                    </Link>
                 </div>
             </div>
             </div>
