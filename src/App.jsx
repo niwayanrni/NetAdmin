@@ -7,6 +7,7 @@ import BaliTourPackage from "./components/BaliTourPackage/BaliTourPackage";
 import ContactUs from "./components/ContactUs/ContactUs";
 import FashBoat from "./components/FastBoat/FastBoat";
 import Footer from "./components/Footer/Footer";
+import Gallery from "./components/Gallery/Gallery";
 import Homepage from "./components/Homepage/Homepage";
 import Navbar from "./components/Navbar/Navbar";
 import ThingsToDo from "./components/ThingsToDo/ThingsToDo";
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/ThingsToDo" element={<ThingsToDo />} />
           <Route path="/Footer" element={<Footer />} />
           <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/Gallery" element={<Gallery />} />
         </Routes>
       </div>
       <Footer />

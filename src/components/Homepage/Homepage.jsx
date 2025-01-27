@@ -61,6 +61,7 @@ return (
                 <img src="/src/assets/Homepage/Gambar3.jpg" alt="Tour Package" className="w-full rounded-lg shadow-lg" />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white group-hover:bg-opacity-50">
                         <h3 className="text-xl font-bold">Tour Package</h3>
+                        <a href="/Bali-Tour-Package" className="mt-4"></a>
                     <button className="mt-4 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg">View Tours</button>
                 </div>
             </div>
