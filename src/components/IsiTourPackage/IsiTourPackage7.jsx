@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const IsiTourPackage5 = () => {
+const IsiTourPackage7 = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -24,8 +24,8 @@ return (
     {/* Header */}
         <div className="relative">
             <img
-                src="/src/assets/IsiTourPackage/Gambar10.jpg"
-                alt="Jatiluwih Rice Terrace"
+                src="/src/assets/IsiTourPackage/Gambar1.jpg"
+                alt="Tirta Gangga"
                 className="w-full h-[380px] object-cover"
             />
             
@@ -37,34 +37,36 @@ return (
         <div className="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Konten dibawah Header */}
         <div className="ml-0 md:ml-[-60px]">
-            <p className="text-gray-600 font-semibold text-lg mt-5">Tabanan, Bali</p>
-                <h2 className="text-2xl font-bold mt-1 mb-4">Jatiluwih Rice Terrace</h2>
+            <p className="text-gray-600 font-semibold text-lg mt-5">Karangasem, Bali</p>
+                <h2 className="text-2xl font-bold mt-1 mb-4">Tirta Gangga</h2>
                 <h3 className="text-base font-bold mt-0 mb-0">Description</h3>
             <p className="mt-1 text-gray-700 text-justify text-base">
-                Jatiluwih Rice Terrace is one of Bali’s most stunning rice landscapes,
-                located in Penebel District, Tabanan Regency. This vast expanse of terraced
-                rice fields offers spectacular views with Mount Batukaru as a backdrop,
-                showcasing the wisdom of the local Subak irrigation system, which has been recognized by UNESCO.
+                Tirta Gangga is a stunning water palace located in the eastern part of Bali,
+                in Karangasem Regency. This serene site features beautiful gardens, fountains,
+                and clear ponds filled with koi fish, creating a peaceful and picturesque atmosphere.
 
-                Jatiluwih is known for its cool air and serene rural atmosphere,
-                making it an ideal place for trekking and relaxation.
+                Built in the 1940s by the King of Karangasem, Tirta Gangga serves as a royal
+                bathing place and is designed with traditional Balinese architecture and lush tropical landscapes.
 
-                The lush green rice fields create a breathtaking panorama, especially during sunset.
+                Visitors can stroll through the gardens, enjoy the tranquil waters,
+                and take stunning photos of the iconic stone carvings and water features.
 
-                This place reflects the harmony between humans and nature,
-                with traditional farming methods still practiced today.
+                The site is also a spiritual place, where locals come to purify themselves in the holy water.
 
-                Beyond its natural beauty, Jatiluwih also offers a rich cultural
-                experience for visitors who wish to understand the agrarian life of the Balinese people.
+                Surrounded by rice terraces and hills, Tirta Gangga offers a perfect
+                escape from the hustle and bustle, making it a must-visit destination for those seeking relaxation and natural beauty in Bali.
+
+                Visitors can enjoy the cool breeze and vibrant flora, especially during
+                the early morning or late afternoon when the light is perfect for photography.
             </p>
 
         <div className="flex flex-col md:flex-row justify-between mt-4">
             <div className="w-full md:w-1/2">
                 <h3 className="text-base font-bold mt-4">Destination</h3>
                 <ul className="list-disc pl-6 text-gray-700 text-base">
-                    <li>Pura Luhur Batukaru</li>
-                    <li>Angseri Hot Springs</li>
-                    <li>Beratan lake & ulun Danu Beratan Temple</li>
+                    <li>Lempuyang Temple</li>
+                    <li>Taman Ujung Water Palace</li>
+                    <li>Amed Beach</li>
                 </ul>
             </div>
 
@@ -172,17 +174,17 @@ return (
                 <p className="mt-2 text-2xl text-gray-600">Handpicked Tours for Every Dream Vacation.</p>
             <div className="mt-8 grid md:grid-cols-3 gap-6">
             {[{
-                img: "/src/assets/IsiTourPackage/Gambar11.jpg",
-                location: "Klungkung, Bali",
-                title: "KELINGKING BEACH"
-            }, {
-                img: "/src/assets/IsiTourPackage/Gambar1.jpg",
-                location: "Karangasem, Bali",
-                title: "TIRTA GANGGA"
-            }, {
                 img: "/src/assets/IsiTourPackage/Gambar15.jpg",
                 location: "Bangli, Bali",
                 title: "TIBUMANA BALI"
+            }, {
+                img: "/src/assets/IsiTourPackage/Gambar3.jpg",
+                location: "Karangasem, Bali",
+                title: "LEMPUYANG TEMPLE"
+            }, {
+                img: "/src/assets/IsiTourPackage/Gambar6.jpg",
+                location: "Tabanan, Bali",
+                title: "LUHUR TANAH LOT TEMPLE"
             }].map((pkg, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
                 <img src={pkg.img} alt={pkg.title} className="w-full h-48 object-cover" />
@@ -201,4 +203,4 @@ return (
 );
 };
 
-export default IsiTourPackage5;
+export default IsiTourPackage7;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const IsiTourPackage5 = () => {
+const IsiTourPackage9 = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -24,8 +24,8 @@ return (
     {/* Header */}
         <div className="relative">
             <img
-                src="/src/assets/IsiTourPackage/Gambar10.jpg"
-                alt="Jatiluwih Rice Terrace"
+                src="/src/assets/IsiTourPackage/Gambar3.jpg"
+                alt="Lempuyang Temple"
                 className="w-full h-[380px] object-cover"
             />
             
@@ -37,34 +37,34 @@ return (
         <div className="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Konten dibawah Header */}
         <div className="ml-0 md:ml-[-60px]">
-            <p className="text-gray-600 font-semibold text-lg mt-5">Tabanan, Bali</p>
-                <h2 className="text-2xl font-bold mt-1 mb-4">Jatiluwih Rice Terrace</h2>
+            <p className="text-gray-600 font-semibold text-lg mt-5">Karangasem, Bali</p>
+                <h2 className="text-2xl font-bold mt-1 mb-4">Lempuyang Temple</h2>
                 <h3 className="text-base font-bold mt-0 mb-0">Description</h3>
             <p className="mt-1 text-gray-700 text-justify text-base">
-                Jatiluwih Rice Terrace is one of Bali’s most stunning rice landscapes,
-                located in Penebel District, Tabanan Regency. This vast expanse of terraced
-                rice fields offers spectacular views with Mount Batukaru as a backdrop,
-                showcasing the wisdom of the local Subak irrigation system, which has been recognized by UNESCO.
+                Lempuyang Temple, also known as Pura Lempuyang Luhur, is one of Bali's most
+                revered temples, located on the slopes of Mount Lempuyang in Karangasem Regency.
+                This ancient temple complex is famous for its breathtaking views of the surrounding
+                mountains and rice terraces, making it a must-visit destination for both spiritual seekers and nature lovers.
 
-                Jatiluwih is known for its cool air and serene rural atmosphere,
-                making it an ideal place for trekking and relaxation.
+                The temple is renowned for its iconic "Gateway to Heaven," which offers a stunning
+                frame for photographs against the backdrop of Mount Agung. Visitors often trek up
+                the 1,700 steps leading to the temple, which is a spiritual journey that rewards them with breathtaking panoramic views.
 
-                The lush green rice fields create a breathtaking panorama, especially during sunset.
+                Lempuyang Temple is not only a place of worship but also a site of great cultural
+                significance, with several smaller temples located within the complex, each featuring unique architecture and serene surroundings.
 
-                This place reflects the harmony between humans and nature,
-                with traditional farming methods still practiced today.
+                The atmosphere is peaceful, allowing visitors to connect with nature and experience the spiritual essence of Bali.
 
-                Beyond its natural beauty, Jatiluwih also offers a rich cultural
-                experience for visitors who wish to understand the agrarian life of the Balinese people.
+                Early morning visits are recommended to catch the sunrise and enjoy the tranquility before the crowds arrive.
             </p>
 
         <div className="flex flex-col md:flex-row justify-between mt-4">
             <div className="w-full md:w-1/2">
                 <h3 className="text-base font-bold mt-4">Destination</h3>
                 <ul className="list-disc pl-6 text-gray-700 text-base">
-                    <li>Pura Luhur Batukaru</li>
-                    <li>Angseri Hot Springs</li>
-                    <li>Beratan lake & ulun Danu Beratan Temple</li>
+                    <li>Tirta Gangga</li>
+                    <li>Taman Ujung Water Palace</li>
+                    <li>Bukit Jambul Rice Terrace</li>
                 </ul>
             </div>
 
@@ -172,17 +172,17 @@ return (
                 <p className="mt-2 text-2xl text-gray-600">Handpicked Tours for Every Dream Vacation.</p>
             <div className="mt-8 grid md:grid-cols-3 gap-6">
             {[{
-                img: "/src/assets/IsiTourPackage/Gambar11.jpg",
-                location: "Klungkung, Bali",
-                title: "KELINGKING BEACH"
+                img: "/src/assets/IsiTourPackage/Gambar6.jpg",
+                location: "Tabanan, Bali",
+                title: "LUHUR TANAH LOT TEMPLE"
             }, {
-                img: "/src/assets/IsiTourPackage/Gambar1.jpg",
-                location: "Karangasem, Bali",
-                title: "TIRTA GANGGA"
+                img: "/src/assets/IsiTourPackage/Gambar7.jpg",
+                location: "Badung, Bali",
+                title: "ULUWATU TEMPLE"
             }, {
-                img: "/src/assets/IsiTourPackage/Gambar15.jpg",
-                location: "Bangli, Bali",
-                title: "TIBUMANA BALI"
+                img: "/src/assets/IsiTourPackage/Gambar8.jpg",
+                location: "Tabanan, Bali",
+                title: "ULUN DANU BERATAN TEMPLE"
             }].map((pkg, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
                 <img src={pkg.img} alt={pkg.title} className="w-full h-48 object-cover" />
@@ -201,4 +201,4 @@ return (
 );
 };
 
-export default IsiTourPackage5;
+export default IsiTourPackage9;

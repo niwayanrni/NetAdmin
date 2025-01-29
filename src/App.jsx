@@ -16,7 +16,11 @@ import IsiTourPackage1 from "./components/IsiTourPackage/IsiTourPackage1";
 import IsiTourPackage2 from "./components/IsiTourPackage/IsiTourPackage2";
 import IsiTourPackage3 from "./components/IsiTourPackage/IsiTourPackage3";
 import IsiTourPackage4 from "./components/IsiTourPackage/IsiTourPackage4";
-
+import IsiTourPackage5 from "./components/IsiTourPackage/IsiTourPackage5";
+import IsiTourPackage6 from "./components/IsiTourPackage/IsiTourPackage6";
+import IsiTourPackage7 from "./components/IsiTourPackage/IsiTourPackage7";
+import IsiTourPackage8 from "./components/IsiTourPackage/IsiTourPackage8";
+import IsiTourPackage9 from "./components/IsiTourPackage/IsiTourPackage9";
 
 const App = () => {
     const [orderPopup, setOrderPopup] = React.useState(false);
@@ -54,7 +58,11 @@ return (
                     <Route path="/IsiTourPackage2" element={<IsiTourPackage2 />} />
                     <Route path="/IsiTourPackage3" element={<IsiTourPackage3 />} />
                     <Route path="/IsiTourPackage4" element={<IsiTourPackage4 />} />
-                    
+                    <Route path="/IsiTourPackage5" element={<IsiTourPackage5 />} />
+                    <Route path="/IsiTourPackage6" element={<IsiTourPackage6 />} />
+                    <Route path="/IsiTourPackage7" element={<IsiTourPackage7 />} />
+                    <Route path="/IsiTourPackage8" element={<IsiTourPackage8 />} />
+                    <Route path="/IsiTourPackage9" element={<IsiTourPackage9 />} />
                 </Routes>
             </div>
         <Footer />
