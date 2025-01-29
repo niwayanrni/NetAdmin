@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 const Homepage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
+
 return (
     <div className="bg-[#EEEEEE]">
 
@@ -46,7 +51,7 @@ return (
                         we provide personalized tour packages, exciting activities, and seamless travel services. Whether you're seeking relaxation on Bali's pristine beaches, an exploration of its unique cultural heritage,
                         or thrilling adventures, Bali Vibes Tour is here to make your dream vacation a reality.
                         </p>
-                        <Link to="/Bali-Tour-Package">
+                        <Link to="/Bali-Tour-Package" onClick={() => window.scrollTo(0, 0)}>
                     <button className="mt-6 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-6 rounded-lg">Explore Our Tour</button>
                     </Link>
                 </div>
@@ -65,7 +70,7 @@ return (
                 <img src="/src/assets/Homepage/Gambar3.jpg" alt="Tour Package" className="w-full rounded-lg shadow-lg" />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white group-hover:bg-opacity-50">
                         <h3 className="text-xl font-bold">Tour Package</h3>
-                        <Link to="/Bali-Tour-Package">
+                        <Link to="/Bali-Tour-Package" onClick={() => window.scrollTo(0, 0)}>
                     <button className="mt-4 bg-[#006666] hover:bg-[#005555] text-white font-semibold py-2 px-4 rounded-lg">View Tours</button>
                     </Link>
                 </div>
@@ -75,7 +80,7 @@ return (
                 <img src="/src/assets/Homepage/Gambar4.jpg" alt="Activities" className="w-full rounded-lg shadow-lg" />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white group-hover:bg-opacity-50">
                         <h3 className="text-xl font-bold">Activities</h3>
-                        <Link to="/Bali-Activities">
+                        <Link to="/Bali-Activities" onClick={() => window.scrollTo(0, 0)}>
                     <button className="mt-4 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg">View Tours</button>
                     </Link>
                 </div>
@@ -85,7 +90,7 @@ return (
                 <img src="/src/assets/Homepage/Gambar5.jpg" alt="Adventure" className="w-full rounded-lg shadow-lg" />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white group-hover:bg-opacity-50">
                         <h3 className="text-xl font-bold">Adventure</h3>
-                        <Link to="/FastBoat">
+                        <Link to="/FastBoat" onClick={() => window.scrollTo(0, 0)}>
                     <button className="mt-4 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg">View Tours</button>
                     </Link>
                 </div>
@@ -108,7 +113,8 @@ return (
                 <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">LUHUR TANAH LOT TEMPLE</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
+                        <Link to="/IsiTourPackage1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                 </div>
             </div>
 
@@ -118,7 +124,8 @@ return (
                 <p className="text-sm text-left font-light text-gray-600">Badung, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">ULUWATU TEMPLE</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
+                        <Link to="/IsiTourPackage2" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                 </div>
             </div>
 
@@ -128,7 +135,8 @@ return (
                 <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">ULUN DANU BERATAN TEMPLE</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
+                        <Link to="/IsiTourPackage3" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                 </div>
             </div>
 
