@@ -34,22 +34,38 @@ const Footer = () => {
 
                 <li>
                     <strong>Email:</strong>
-                    <div>niwayanrinik@gmail.com</div>
+                    <div>
+                        <a
+                            href="mailto:balivibestour@gmail.com" 
+                            className="text-blue-500 hover:underline"
+                        >
+                            balivibestour@gmail.com
+                        </a>
+                    </div>
                 </li>
         
                 <li>
                     <strong>Whatsapp:</strong>
-                    <div>081340241611</div>
+                    <div>
+                        <a
+                            href="https://wa.me/6282247185629"
+                            className="hover:underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            082247185629
+                        </a>
+                    </div>
                 </li>
         
                 <li>
                     <strong>Phone:</strong>
-                    <div>081340241611</div>
+                    <div>082247185629</div>
                 </li>
         
                 <li>
                     <strong>Alamat:</strong>
-                    <div>JL. Sei Wain KM 15, Balikpapan Utara, Balikpapan, Kalimantan Timur</div>
+                    <div>Br Perangsada, Desa Pering, Kec Blahbatuh, Kab Gianyar</div>
                 </li>
             </ul>
         </div>
@@ -58,11 +74,18 @@ const Footer = () => {
     {/* Follow Us */}
         <div className="col-span-1">
             <h2 className="text-xl font-bold mb-4">Follow Us</h2>
-                <div className="text-gray-700">Add social media links here</div>
-                </div>
-            </div>
+            <a
+                href="https://www.instagram.com/balivibes_tour" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center text-gray-700 hover:text-pink-500 transition duration-300"
+            >
+                <img src="/src/assets/Footer/IG.png"  alt="" className="w-6 h-6 mr-2" />
+                <span>@balivibes_tour</span>
+            </a>
         </div>
-    
+            </div>
+                </div>
 
     {/* Footer */}
         <div className="mt-6 text-center text-gray-600 pb-4"> Bali Vibes Tour © 2025 All Rights Reserved. Powered by NetAdmin</div>

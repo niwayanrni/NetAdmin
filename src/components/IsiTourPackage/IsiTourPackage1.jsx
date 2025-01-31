@@ -110,7 +110,15 @@ return (
         <div className="bg-gray-100 p-6 rounded-lg shadow-md md:ml-20 md:w-[465px] mb-10 mt-2 md:mt-10 transform scale-97 md:mb-20">
             <h3 className="text-2xl font-bold mb-4">BOOK NOW</h3>
         <div className="flex flex-col gap-2 mb-4">
-            <button className="bg-[#006666] text-white py-2 px-4 rounded w-full mb-2">Whatsapp</button>
+        <a
+            href="https://wa.me/6282247185629"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#006666] text-white py-2 px-4 rounded w-full mb-2 text-center block"
+        >
+            Whatsapp
+        </a>
+
             <button className="bg-[#006666] text-white py-2 px-4 rounded w-full mb-2">Email</button>
         </div>
             <form onSubmit={handleSubmit} className="space-y-4">

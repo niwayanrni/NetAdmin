@@ -9,17 +9,17 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
-useEffect(() => {
-    const handleClickOutside = (event) => {
-        if (menuRef.current && !menuRef.current.contains(event.target)) {
-            setIsOpen(false);
-        }
-    };
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
     }, []);
 
     return (
@@ -52,7 +52,7 @@ useEffect(() => {
             ref={menuRef}
             className={`${
                 isOpen ? "block" : "hidden"
-            } absolute md:static md:flex md:space-x-6 text-gray-800 font-poppins font-semibold bg-gray-100 md:bg-transparent z-10 w-full md:w-auto`}
+            } absolute top-20 right-20 max md:static md:flex md:space-x-6 text-gray-800 font-poppins font-semibold bg-gray-100 md:bg-transparent z-20 w-56 md:w-auto `}
         >
         <li>
             <Link to="/" className="block py-2 hover:text-yellow-600">Home</Link>
@@ -73,7 +73,7 @@ useEffect(() => {
         <li>
             <Link to="/ThingsToDo" className="block py-2 hover:text-yellow-600">Things To Do</Link>
                 </li>
-          
+        
         <li>
             <Link to="/Gallery" className="block py-2 hover:text-yellow-600">Gallery</Link>
                 </li>
@@ -84,7 +84,7 @@ useEffect(() => {
             </ul>
         </div>
     </nav>
-  );
+);
 };
 
 export default Navbar;
