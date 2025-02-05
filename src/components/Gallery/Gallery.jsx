@@ -17,18 +17,27 @@ const Gallery = () => {
 
     {/* Gallery */}
         <div className="grid grid-cols-3 gap-4 p-4 pt-24">
-            {[{ id: 1, src: "/src/assets/Gallery/Gambar2.jpg", alt: "Sunset on the beach" },
-                { id: 2, src: "/src/assets/Gallery/Gambar3.png", alt: "Relaxing in a park" },
-                { id: 3, src: "/src/assets/Gallery/Gambar4.jpg", alt: "Tanah Lot temple" },
-                { id: 4, src: "/src/assets/Gallery/Gambar5.jpg", alt: "Rice terraces" },
-                { id: 5, src: "/src/assets/Gallery/Gambar6.jpg", alt: "Nusa Penida view" },
-                { id: 6, src: "/src/assets/Gallery/Gambar7.jpg", alt: "Temple gate" },
-                { id: 7, src: "/src/assets/Gallery/Gambar8.jpg", alt: "Hiking Mount Batur" },
-                { id: 8, src: "/src/assets/Gallery/Gambar9.jpg", alt: "Sunrise gate" },
-                { id: 9, src: "/src/assets/Gallery/Gambar10.jpg", alt: "ATV adventure" },
-                { id: 10, src: "/src/assets/Gallery/Gambar11.jpg", alt: "Snorkeling underwater" },
-                { id: 11, src: "/src/assets/Gallery/Gambar12.jpg", alt: "Bali swing" },
-                { id: 12, src: "/src/assets/Gallery/Gambar13.jpg", alt: "Clear water snorkeling" }].map((photo) => (
+            {[{ id: 1, src: "/src/assets/Gallery/Gambar2.jpg", alt: "" },
+                { id: 2, src: "/src/assets/Gallery/Gambar3.png", alt: "" },
+                { id: 3, src: "/src/assets/Gallery/Gambar4.jpg", alt: "" },
+                { id: 4, src: "/src/assets/Gallery/Gambar5.jpg", alt: "" },
+                { id: 5, src: "/src/assets/Gallery/Gambar6.jpg", alt: "" },
+                { id: 6, src: "/src/assets/Gallery/Gambar7.jpg", alt: "" },
+                { id: 7, src: "/src/assets/Gallery/Gambar8.jpg", alt: "" },
+                { id: 8, src: "/src/assets/Gallery/Gambar9.jpg", alt: "" },
+                { id: 9, src: "/src/assets/Gallery/Gambar10.jpg", alt: "" },
+                { id: 10, src: "/src/assets/Gallery/Gambar11.jpg", alt: "" },
+                { id: 11, src: "/src/assets/Gallery/Gambar12.jpg", alt: "" },
+                { id: 12, src: "/src/assets/Gallery/Gambar13.jpg", alt: "" },
+                { id: 13, src: "/src/assets/Gallery/Gambar14.jpg", alt: "" },
+                { id: 14, src: "/src/assets/Gallery/Gambar15.jpg", alt: "" },
+                { id: 15, src: "/src/assets/Gallery/Gambar16.jpg", alt: "" },
+                { id: 16, src: "/src/assets/Gallery/Gambar17.jpg", alt: "" },
+                { id: 17, src: "/src/assets/Gallery/Gambar18.jpg", alt: "" },
+                { id: 18, src: "/src/assets/Gallery/Gambar19.jpg", alt: "" },
+                { id: 19, src: "/src/assets/Gallery/Gambar20.jpg", alt: "" },
+                { id: 20, src: "/src/assets/Gallery/Gambar21.jpg", alt: "" },
+                { id: 21, src: "/src/assets/Gallery/Gambar22.jpg", alt: "" },].map((photo) => (
         <div key={photo.id} className="rounded-lg overflow-hidden shadow-lg">
             <img
                 src={photo.src}
