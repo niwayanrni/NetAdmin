@@ -44,23 +44,31 @@ const ContactUs = () => {
                 </p>
 
                 <p className="mb-6">
-                    <a href="mailto:niwayanrinik@gmail.com" className="text-blue-500">niwayanrinik@gmail.com</a>
+                    <a href="mailto:balivibestour@gmail.com" className="text-blue-500">balivibestour@gmail.com</a>
                 </p>
 
                 <p className="mb-1">
                     <strong>Phone:</strong>
                 </p>
 
-                <p className="mb-6">081340241611</p>
+                <p className="mb-6">082247185629</p>
 
                 <p className="mb-1">
                     <strong>Whatsapp:</strong>
                 </p>
                 
-                <p className="mb-6">081340241611</p>
+                <p className="mb-6">082247185629</p>
 
                 <p>
+                
+                <div>
                     <strong>Follow Us:</strong>
+                        <div className="flex items-center mt-2">
+                            <img src="/src/assets/Footer/IG.png" alt="" className="w-6 h-6 mr-2" />
+                        <span>@balivibes_tour</span>
+                    </div>
+                </div>
+
                 </p>
             </div>
 
