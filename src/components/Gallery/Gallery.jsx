@@ -15,6 +15,7 @@ const Gallery = () => {
         </div>
     </div>
 
+
     {/* Gallery */}
         <div className="grid grid-cols-3 gap-4 p-4 pt-24">
             {[{ id: 1, src: "/src/assets/Gallery/Gambar2.jpg", alt: "" },
@@ -48,7 +49,7 @@ const Gallery = () => {
         ))}
     </div>
     </div>
-  );
+);
 };
 
 export default Gallery;

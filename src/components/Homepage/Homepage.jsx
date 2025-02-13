@@ -239,7 +239,8 @@ return (
                 <div className="p-4 w-[50%]">
                     <h3 className="text-lg text-left font-bold text-gray-800">Surfing at Kuta Beach</h3>
                     <p className="mt-2 text-left font-light text-gray-600">Catch some waves at Bali's most famous beach, perfect for surfers of all levels.</p>
-                <button className="mt-8 text-left text-gray-800 font-medium block">READ MORE</button>
+                    <Link to="/IsiThingsToDo1" onClick={() => window.scrollTo(0, 0)}>
+                <button className="mt-8 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
         </div>
 
@@ -249,7 +250,8 @@ return (
                 <div className="p-4 w-[50%]">
                     <h3 className="text-lg text-left font-bold text-gray-800">Hiking Mount Agung</h3>
                     <p className="mt-2 text-left font-light text-gray-600">Embark on an early morning hike to Bali's highest volcano for stunning sunrise views.</p>
-                <button className="mt-8 text-left text-gray-800 font-medium block">READ MORE</button>
+                    <Link to="/IsiThingsToDo2" onClick={() => window.scrollTo(0, 0)}>
+                <button className="mt-8 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
         </div>
 
@@ -259,7 +261,8 @@ return (
                 <div className="p-4 w-[50%]">
                     <h3 className="text-lg text-left font-bold text-gray-800">Snorkeling at Nusa Penida</h3>
                     <p className="mt-2 text-left font-light text-gray-600">Discover vibrant coral reefs and marine life around the island of Nusa Penida.</p>
-                <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button>
+                    <Link to="/IsiThingsToDo3" onClick={() => window.scrollTo(0, 0)}>
+                <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
         </div>
 
@@ -269,7 +272,8 @@ return (
                 <div className="p-4 w-[50%]">
                     <h3 className="text-lg text-left font-bold text-gray-800">Visiting Ubud Monkey Forest</h3>
                     <p className="mt-2 text-left font-light text-gray-600">Meet the friendly monkeys and enjoy the lush greenery of Ubud's iconic forest sanctuary.</p>
-                <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button>
+                    <Link to="/IsiThingsToDo4" onClick={() => window.scrollTo(0, 0)}>
+                <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
         </div>
 
@@ -279,7 +283,8 @@ return (
                 <div className="p-4 w-[50%]">
                     <h3 className="text-lg text-left font-bold text-gray-800">Exploring Tegallalang Rice Terraces</h3>
                     <p className="mt-2 text-left font-light text-gray-600">Marvel at the beautiful terraced rice fields and capture stunning photos.</p>
-                <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button>
+                    <Link to="/IsiThingsToDo5" onClick={() => window.scrollTo(0, 0)}>
+                <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
         </div>
 
@@ -289,7 +294,8 @@ return (
                 <div className="p-4 w-[50%]">
                     <h3 className="text-lg text-left font-bold text-gray-800">Relaxing at Jimbaran Bay</h3>
                     <p className="mt-2 text-left font-light text-gray-600">Unwind on the serene shores of Jimbaran Bay, enjoy stunning sunsets, and savor fresh seafood by the beach.</p>
-                <button className="mt-4 text-left text-gray-800 font-medium block">READ MORE</button>
+                    <Link to="/IsiThingsToDo6" onClick={() => window.scrollTo(0, 0)}>
+                <button className="mt-4 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
         </div>
             </div>
