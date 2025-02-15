@@ -12,15 +12,9 @@ import Homepage from "./components/Homepage/Homepage";
 import Navbar from "./components/Navbar/Navbar";
 import ThingsToDo from "./components/ThingsToDo/ThingsToDo";
 
+import IsiBaliActivities1 from "./components/IsiBaliActivities/IsiBaliActivities1";
 import IsiTourPackage1 from "./components/IsiTourPackage/IsiTourPackage1";
-import IsiTourPackage2 from "./components/IsiTourPackage/IsiTourPackage2";
-import IsiTourPackage3 from "./components/IsiTourPackage/IsiTourPackage3";
-import IsiTourPackage4 from "./components/IsiTourPackage/IsiTourPackage4";
-import IsiTourPackage5 from "./components/IsiTourPackage/IsiTourPackage5";
-import IsiTourPackage6 from "./components/IsiTourPackage/IsiTourPackage6";
-import IsiTourPackage7 from "./components/IsiTourPackage/IsiTourPackage7";
-import IsiTourPackage8 from "./components/IsiTourPackage/IsiTourPackage8";
-import IsiTourPackage9 from "./components/IsiTourPackage/IsiTourPackage9";
+
 
 import IsiFastBoat1 from "./components/IsiFastBoat/IsiFastBoat1";
 import IsiFastBoat2 from "./components/IsiFastBoat/IsiFastBoat2";
@@ -29,6 +23,8 @@ import IsiThingsToDo1 from "./components/IsiThingsToDo/IsiThingsToDo1";
 import IsiThingsToDo2 from "./components/IsiThingsToDo/IsiThingsToDo2";
 import IsiThingsToDo3 from "./components/IsiThingsToDo/IsiThingsToDo3";
 import IsiThingsToDo4 from "./components/IsiThingsToDo/IsiThingsToDo4";
+import IsiThingsToDo5 from "./components/IsiThingsToDo/IsiThingsToDo5";
+import IsiThingsToDo6 from "./components/IsiThingsToDo/IsiThingsToDo6";
 
 const App = () => {
     const [orderPopup, setOrderPopup] = React.useState(false);
@@ -62,15 +58,8 @@ return (
                     <Route path="/ContactUs" element={<ContactUs />} />
                     <Route path="/Gallery" element={<Gallery />} />
 
-                    <Route path="/IsiTourPackage1" element={<IsiTourPackage1 />} />
-                    <Route path="/IsiTourPackage2" element={<IsiTourPackage2 />} />
-                    <Route path="/IsiTourPackage3" element={<IsiTourPackage3 />} />
-                    <Route path="/IsiTourPackage4" element={<IsiTourPackage4 />} />
-                    <Route path="/IsiTourPackage5" element={<IsiTourPackage5 />} />
-                    <Route path="/IsiTourPackage6" element={<IsiTourPackage6 />} />
-                    <Route path="/IsiTourPackage7" element={<IsiTourPackage7 />} />
-                    <Route path="/IsiTourPackage8" element={<IsiTourPackage8 />} />
-                    <Route path="/IsiTourPackage9" element={<IsiTourPackage9 />} />
+                    <Route path="/IsiTourPackage1/:id" element={<IsiTourPackage1 />} />
+                    <Route path="/IsiBaliActivities1/:id" element={<IsiBaliActivities1 />} />
 
                     <Route path="/IsiFastBoat1" element={<IsiFastBoat1 />} />
                     <Route path="/IsiFastBoat2" element={<IsiFastBoat2 />} />
@@ -79,8 +68,8 @@ return (
                     <Route path="/IsiThingsToDo2" element={<IsiThingsToDo2 />} />
                     <Route path="/IsiThingsToDo3" element={<IsiThingsToDo3 />} />
                     <Route path="/IsiThingsToDo4" element={<IsiThingsToDo4 />} />
-                    
-                
+                    <Route path="/IsiThingsToDo5" element={<IsiThingsToDo5 />} />
+                    <Route path="/IsiThingsToDo6" element={<IsiThingsToDo6 />} />
 
                 </Routes>
             </div>

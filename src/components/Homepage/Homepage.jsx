@@ -113,7 +113,7 @@ return (
                 <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">LUHUR TANAH LOT TEMPLE</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                        <Link to="/IsiTourPackage1" onClick={() => window.scrollTo(0, 0)}>
+                        <Link to="/IsiTourPackage1/1" onClick={() => window.scrollTo(0, 0)}>
                     <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                 </div>
             </div>
@@ -124,7 +124,7 @@ return (
                 <p className="text-sm text-left font-light text-gray-600">Badung, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">ULUWATU TEMPLE</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                        <Link to="/IsiTourPackage2" onClick={() => window.scrollTo(0, 0)}>
+                        <Link to="/IsiTourPackage1/2" onClick={() => window.scrollTo(0, 0)}>
                     <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                 </div>
             </div>
@@ -135,7 +135,7 @@ return (
                 <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">ULUN DANU BERATAN TEMPLE</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                        <Link to="/IsiTourPackage3" onClick={() => window.scrollTo(0, 0)}>
+                        <Link to="/IsiTourPackage1/3" onClick={() => window.scrollTo(0, 0)}>
                     <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                 </div>
             </div>
@@ -146,7 +146,7 @@ return (
                 <p className="text-sm text-left font-light text-gray-600">Bangli, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">MOUNT BATUR</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                        <Link to="/IsiTourPackage4" onClick={() => window.scrollTo(0, 0)}>
+                        <Link to="/IsiTourPackage1/4" onClick={() => window.scrollTo(0, 0)}>
                     <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                 </div>
             </div>
@@ -157,7 +157,7 @@ return (
                 <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">JATILUWIH RICE TERRACE</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                        <Link to="/IsiTourPackage5" onClick={() => window.scrollTo(0, 0)}>
+                        <Link to="/IsiTourPackage1/5" onClick={() => window.scrollTo(0, 0)}>
                     <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                 </div>
             </div>
@@ -168,7 +168,7 @@ return (
             <p className="text-sm text-left font-light text-gray-600">Klungkung, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">KELINGKING BEACH</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                        <Link to="/IsiTourPackage6" onClick={() => window.scrollTo(0, 0)}>
+                        <Link to="/IsiTourPackage1/6" onClick={() => window.scrollTo(0, 0)}>
                     <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                 </div>
             </div>

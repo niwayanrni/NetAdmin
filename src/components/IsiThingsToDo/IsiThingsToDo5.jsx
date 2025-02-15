@@ -1,7 +1,7 @@
 import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
-const IsiThingsToDo1 = () => {
+const IsiThingsToDo5 = () => {
 
 return (
     <div className="bg-gray-100">
@@ -9,7 +9,7 @@ return (
     {/* Header */}
         <div className="relative">
             <img
-                src="/src/assets/IsiThingsToDo/Gambar1.jpg"
+                src="/src/assets/IsiThingsToDo/Gambar5.jpg"
                 alt="Bali Vibes Hero"
                 className="w-full h-[380px] object-cover"
             />
@@ -18,27 +18,24 @@ return (
 
     {/* Isi Konten */}
         <div className="max-w-6xl mx-auto p-6 mt-8">
-            <h1 className="text-2xl font-bold mb-2">Karang Sewu Beach</h1>
+            <h1 className="text-2xl font-bold mb-2">Handara Gate</h1>
 
     {/* Tanggal publish */}
         <div className="flex items-center text-gray-600 mb-4">
             <FaRegCalendarAlt className="mr-2 text-sm" />
-            <span>Published on February 10, 2025</span>
+            <span>Published on February 14, 2025</span>
         </div>
             <p className="text-gray-700 mb-4 text-justify">
-                Located in the West Bali region, Karang Sewu Beach is a hidden gem that offers
-                breathtaking natural beauty. Situated near Gilimanuk, this beach presents a stunning
-                view of vast green grasslands harmonizing with the calm sea. The main highlight of
-                this beach is its tranquil ambiance, mesmerizing sunrise views, and the wooden pier
-                stretching into the ocean, making it a favorite spot for visitors. Tourists can enjoy
-                various activities such as strolling, photography, picnicking, and boat rides.
-                The Balinese also believe that this area is a natural treasure that should be preserved.
-                It is no surprise that this destination becomes a popular getaway for families, especially
-                on weekends and during holiday seasons.
+                Handara Gate is one of Bali’s most Instagrammable landmarks, famous for its majestic
+                Balinese-style split gate set against a backdrop of lush green mountains and misty skies.
+                Located in Bedugul, North Bali, this stunning gate is the entrance to the Handara Golf & Resort,
+                but it has become a popular photo spot for travelers seeking the perfect Balinese aesthetic.
+                With its traditional Balinese architecture, cool mountain air, and breathtaking scenery,
+                Handara Gate symbolizes a gateway to serenity and harmony. The symmetrical stone structure,
+                surrounded by tropical forests and misty hills, creates a mystical and picturesque atmosphere, making it a must-visit destination.
             </p>
             <h2 className="font-bold mt-6 text-lg">TAGS</h2>
-                <p className="text-blue-500 text-base">#SunriseView #ScenicBeach #HiddenGem #PhotographySpot #NatureLover
-                    #RelaxingVibes #PicnicSpot #WoodenPier #PeacefulEscape #BoatingAdventure</p>
+                <p className="text-blue-500 text-base">#HandaraGate #BaliTrip #ExploreBali #BalineseGate #VisitBali #BaliNature #BaliPhotography #InstagramSpot #BaliLandmark #HandaraGolf</p>
         
     {/* Bagian Share */}
         <div className="mt-6">
@@ -66,4 +63,4 @@ return (
 );
 };
 
-export default IsiThingsToDo1;
+export default IsiThingsToDo5;

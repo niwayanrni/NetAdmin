@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const IsiTourPackage1 = () => {
+const IsiBaliActivities1 = () => {
     const {id} = useParams()
     const [dataPackage, setData] = useState([])
 
     console.log(`This is id: ${id}`);
 
     useEffect(() => {
-        fetch(`http://localhost:8088/packagetour/${id}`)
+        fetch(`http://localhost:8088/baliactivities/${id}`)
         .then(res => res.json())
         .then(data => setData(data))
         .catch(err => console.log(err));
@@ -208,4 +208,4 @@ return (
 );
 };
 
-export default IsiTourPackage1;
+export default IsiBaliActivities1;

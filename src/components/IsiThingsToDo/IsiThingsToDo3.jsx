@@ -45,19 +45,19 @@ return (
         <div className="mt-6">
             <h2 className="font-bold text-lg">SHARE POST</h2>
                 <div className="flex space-x-4 mt-2 mb-10">
-                <a href="#">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=URL_POSTINGAN" target="_blank" rel="noopener noreferrer">
                     <img src="/src/assets/IsiThingsToDo/facebook.png" alt="Facebook" className="w-6 h-6" />
                 </a>
 
-                <a href="#">
+                <a href="https://www.instagram.com/?url=URL_POSTINGAN" target="_blank" rel="noopener noreferrer">
                     <img src="/src/assets/IsiThingsToDo/instagram.png" alt="Instagram" className="w-6 h-6" />
                 </a>
 
-                <a href="#">
+                <a href="https://t.me/share/url?url=URL_POSTINGAN&text=Check%20this%20out!" target="_blank" rel="noopener noreferrer">
                     <img src="/src/assets/IsiThingsToDo/telegram.png" alt="Telegram" className="w-6 h-6" />
                 </a>
 
-                <a href="#">
+                <a href="https://wa.me/?text=Check%20this%20out!%20URL_POSTINGAN" target="_blank" rel="noopener noreferrer">
                     <img src="/src/assets/IsiThingsToDo/whatsapp.png" alt="WhatsApp" className="w-6 h-6" />
                 </a>
             </div>

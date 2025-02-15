@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
+
 
 const BaliActivities = () => {
+     useEffect(() => {
+                window.scrollTo(0, 0);
+            }, []);
+            
   return (
     <div className="bg-[#EEEEEE]">
       {/* Header */}
@@ -27,17 +33,18 @@ const BaliActivities = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group group scale-90">
                 <img src="/src/assets/Bali Activities/Gambar2.jpg" alt="Bali Quad Bike Tubbing" className="w-full h-48 object-cover" />
             <div className="p-4 ">
-                <p className="text-sm text-left font-light text-gray-600">Bali, Indonesia</p>
+                <p className="text-sm text-left font-light text-gray-600">Gianyar, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">BALI QUADBIKE TUBBING</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
+                        <Link to="/Isibaliactivities1/1" onClick={() => window.scrollTo(0, 0)}>
+                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
                     </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
                 <img src="/src/assets/Bali Activities/Gambar3.jpg" alt="Bali Quad Bike ATV" className="w-full h-48 object-cover" />
             <div className="p-4">
-                <p className="text-sm text-left font-light text-gray-600">Bali, Indonesia</p>
+                <p className="text-sm text-left font-light text-gray-600">Gianyar, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">BALI QUAD BIKE ATV</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
                             <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
@@ -47,7 +54,7 @@ const BaliActivities = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
                 <img src="/src/assets/Bali Activities/Gambar4.jpg" alt="Dolphin Trip" className="w-full h-48 object-cover" />
             <div className="p-4">
-                <p className="text-sm text-left font-light text-gray-600">Bali Indonesia</p>
+                <p className="text-sm text-left font-light text-gray-600">Buleleng, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">DOLPHIN TRIP</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
                             <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
