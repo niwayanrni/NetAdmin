@@ -60,19 +60,23 @@ return (
         <div className="flex flex-col md:flex-row justify-between mt-4">
             <div className="w-full md:w-1/2">
                 <h3 className="text-base font-bold mt-4">Destination</h3>
-                <ul className="list-disc pl-6 text-gray-700 text-base">
-                    <li>Tanah Lot Temple</li>
-                    <li>Batu Bolong Temple</li>
-                    <li>Traditional Market</li>
-                </ul>
+                {dataPackage.length > 0 ? (
+                    <ul className="list-disc pl-6 text-gray-700 text-base">
+                        {dataPackage[0].destination.split(", ").map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                    </ul>
+                ) : (
+                <p>Loading...</p>
+                )}
             </div>
 
             <div className="w-full md:w-1/2">
                 <h3 className="text-base font-bold mt-4">Includes</h3>
                 <ul className="list-disc pl-6 text-gray-700 text-base">
-                    <li>Driver as guide</li>
-                    <li>Car with air-conditioner</li>
-                    <li>Fuel</li>
+                    <li>Profesional Guide </li>
+                    <li>Safety Equipment</li>
+                    <li>Adventure Ride</li>
                 </ul>
             </div>
         </div>
@@ -81,9 +85,9 @@ return (
             <div className= "w-full md:w-1/2">
                 <h3 className="text-base font-bold mt-4">Exludes</h3>
                 <ul className="list-disc pl-6 text-gray-700 text-base">
-                    <li>Entarance Fee</li>
-                    <li>Lunch</li>
-                    <li>Shopping</li>
+                    <li>Hotel Pickup & Drop Off</li>
+                    <li>Insurance</li>
+                    <li>Photo & Video Service</li>
                 </ul>
             </div>
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const IsiTourPackage1 = () => {
     const {id} = useParams()
@@ -60,11 +60,15 @@ return (
         <div className="flex flex-col md:flex-row justify-between mt-4">
             <div className="w-full md:w-1/2">
                 <h3 className="text-base font-bold mt-4">Destination</h3>
-                <ul className="list-disc pl-6 text-gray-700 text-base">
-                    <li>Tanah Lot Temple</li>
-                    <li>Batu Bolong Temple</li>
-                    <li>Traditional Market</li>
-                </ul>
+                {dataPackage.length > 0 ? (
+                    <ul className="list-disc pl-6 text-gray-700 text-base">
+                        {dataPackage[0].destination.split(", ").map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                    </ul>
+                ) : (
+                <p>Loading...</p>
+                )}
             </div>
 
             <div className="w-full md:w-1/2">
@@ -172,35 +176,46 @@ return (
         </div>
 
 
-    {/* Popular Tour Packages section */}
+    {/* Popular Tour Packages Section */}
         <section className="py-16 px-6 md:px-16">
-            <div className="max-w-7xl mx-auto text-center">
-                <h2 className="mt-[-80px] text-3xl md:text-3xl font-semibold text-gray-800">Popular Tour Packages</h2>
-                <p className="mt-2 text-2xl text-gray-600">Handpicked Tours for Every Dream Vacation.</p>
-            <div className="mt-8 grid md:grid-cols-3 gap-6">
-            {[{
-                img: "/src/assets/IsiTourPackage/Gambar7.jpg",
-                location: "Badung, Bali",
-                title: "ULUWATU TEMPLE"
-            }, {
-                img: "/src/assets/IsiTourPackage/Gambar8.jpg",
-                location: "Tabanan, Bali",
-                title: "ULUN DANU BERATAN TEMPLE"
-            }, {
-                img: "/src/assets/IsiTourPackage/Gambar9.jpg",
-                location: "Bangli, Bali",
-                title: "MOUNT BATUR"
-            }].map((pkg, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
-                <img src={pkg.img} alt={pkg.title} className="w-full h-48 object-cover" />
-            <div className="p-4">
-                <p className="text-sm text-left font-light text-gray-600">{pkg.location}</p>
-                <h3 className="text-lg text-left font-bold text-gray-800">{pkg.title}</h3>
-                <p className="mt-2 text-left text-[#006666]">Start From $50/PAX</p>
-                <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
-                </div>
-            </div>
-            ))}
+                    <div className="max-w-7xl mx-auto text-center">
+                        <h2 className="mt-[-80px] text-3xl md:text-3xl font-semibold text-gray-800">Popular Tour Packages</h2>
+                            <p className="mt-2 text-2xl  text-gray-600">Handpicked Tours for Every Dream Vacation.</p>
+                    <div className="mt-8 grid md:grid-cols-3 gap-6">
+        
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
+                        <img src="/src/assets/Homepage/Gambar6.jpg" alt="Tanah Lot" className="w-full h-48 object-cover" />
+                    <div className="p-4">
+                        <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
+                            <h3 className="text-lg text-left font-bold text-gray-800">LUHUR TANAH LOT TEMPLE</h3>
+                                <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
+                                <Link to="/IsiTourPackage1/1" onClick={() => window.scrollTo(0, 0)}>
+                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                        </div>
+                    </div>
+        
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
+                        <img src="/src/assets/Homepage/Gambar7.jpg" alt="Uluwatu" className="w-full h-48 object-cover" />
+                    <div className="p-4">
+                        <p className="text-sm text-left font-light text-gray-600">Badung, Bali</p>
+                            <h3 className="text-lg text-left font-bold text-gray-800">ULUWATU TEMPLE</h3>
+                                <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
+                                <Link to="/IsiTourPackage1/2" onClick={() => window.scrollTo(0, 0)}>
+                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                        </div>
+                    </div>
+        
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
+                        <img src="/src/assets/Homepage/Gambar8.jpg" alt="Ulun Danu" className="w-full h-48 object-cover" />
+                    <div className="p-4">
+                        <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
+                            <h3 className="text-lg text-left font-bold text-gray-800">ULUN DANU BERATAN TEMPLE</h3>
+                                <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
+                                <Link to="/IsiTourPackage1/3" onClick={() => window.scrollTo(0, 0)}>
+                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                        </div>
+                    </div>
+        
         </div>
         </div>
     </section>
