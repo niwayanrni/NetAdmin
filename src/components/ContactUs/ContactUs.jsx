@@ -129,7 +129,7 @@ const ContactUs = () => {
 
                 <button
                     type="submit"
-                    className="w-full bg-teal-500 text-white font-medium py-2 rounded-lg hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                    className="w-full bg-[#006666] text-white font-medium py-2 rounded-lg hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-800"
                 >
                     Send
                 </button>

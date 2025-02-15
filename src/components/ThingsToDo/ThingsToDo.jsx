@@ -26,8 +26,8 @@ return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex items-center w-full h-[190px]">
             <img src="/src/assets/Homepage/Gambar12.jpg" alt="Surfing in Bali" className="w-[50%] h-full object-cover" />
                 <div className="p-4 w-[50%]">
-                    <h3 className="text-lg text-left font-bold text-gray-800">Surfing at Kuta Beach</h3>
-                    <p className="mt-2 text-left font-light text-gray-600">Catch some waves at Bali's most famous beach, perfect for surfers of all levels.</p>
+                    <h3 className="text-lg text-left font-bold text-gray-800">KARANG SEWU BEACH </h3>
+                    <p className="mt-2 text-left font-light text-gray-600">Karang Sewu Beach is located at jembrana, part of West Bali National Park.</p>
                     <Link to="/IsiThingsToDo1" onClick={() => window.scrollTo(0, 0)}>
                 <button className="mt-8 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
@@ -37,10 +37,10 @@ return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex items-center w-full h-[190px]">
             <img src="/src/assets/Homepage/Gambar13.png" alt="Hiking Mount Agung" className="w-[50%] h-full object-cover" />
                 <div className="p-4 w-[50%]">
-                    <h3 className="text-lg text-left font-bold text-gray-800">Hiking Mount Agung</h3>
-                    <p className="mt-2 text-left font-light text-gray-600">Embark on an early morning hike to Bali's highest volcano for stunning sunrise views.</p>
+                    <h3 className="text-lg text-left font-bold text-gray-800">BALI BOTANICAL GARDEN</h3>
+                    <p className="mt-2 text-left font-light text-gray-600">Bali Botanical Garden is a large tropical botanic garden in Bali is located in Bedugul.</p>
                     <Link to="/IsiThingsToDo2" onClick={() => window.scrollTo(0, 0)}>
-                <button className="mt-8 text-left text-gray-800 font-medium block">READ MORE</button></Link>
+                <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
         </div>
 
@@ -48,8 +48,8 @@ return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex items-center w-full h-[190px]">
             <img src="/src/assets/Homepage/Gambar10.jpg" alt="Snorkeling at Nusa Penida" className="w-[50%] h-full object-cover" />
                 <div className="p-4 w-[50%]">
-                    <h3 className="text-lg text-left font-bold text-gray-800">Snorkeling at Nusa Penida</h3>
-                    <p className="mt-2 text-left font-light text-gray-600">Discover vibrant coral reefs and marine life around the island of Nusa Penida.</p>
+                    <h3 className="text-lg text-left font-bold text-gray-800">JATILUWIH RICE TERRACE</h3>
+                    <p className="mt-2 text-left font-light text-gray-600">One of the heritage site by UNESCO in Bali is Jatiluwih rice terrace. Located in.</p>
                     <Link to="/IsiThingsToDo3" onClick={() => window.scrollTo(0, 0)}>
                 <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
@@ -59,8 +59,8 @@ return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex items-center w-full h-[190px]">
             <img src="/src/assets/Homepage/Gambar6.jpg" alt="Visiting Ubud Monkey Forest" className="w-[50%] h-full object-cover" />
                 <div className="p-4 w-[50%]">
-                    <h3 className="text-lg text-left font-bold text-gray-800">Visiting Ubud Monkey Forest</h3>
-                    <p className="mt-2 text-left font-light text-gray-600">Meet the friendly monkeys and enjoy the lush greenery of Ubud's iconic forest sanctuary.</p>
+                    <h3 className="text-lg text-left font-bold text-gray-800">LUHUR TANAH LOT TEMPLE</h3>
+                    <p className="mt-2 text-left font-light text-gray-600">Tanah Lot is an iconic temple perched on a rocky outcrop by the sea in Bali.</p>
                     <Link to="/IsiThingsToDo4" onClick={() => window.scrollTo(0, 0)}>
                 <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
@@ -70,10 +70,10 @@ return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex items-center w-full h-[190px]">
             <img src="/src/assets/Homepage/Gambar14.jpg" alt="Exploring Tegallalang Rice Terraces" className="w-[50%] h-full object-cover" />
                 <div className="p-4 w-[50%]">
-                    <h3 className="text-lg text-left font-bold text-gray-800">Exploring Tegallalang Rice Terraces</h3>
-                    <p className="mt-2 text-left font-light text-gray-600">Marvel at the beautiful terraced rice fields and capture stunning photos.</p>
+                    <h3 className="text-lg text-left font-bold text-gray-800">HANDARA GATE</h3>
+                    <p className="mt-2 text-left font-light text-gray-600">Handara Gate is a majestic traditional Balinese gate set against a backdrop of lush greenery and mountains.</p>
                     <Link to="/IsiThingsToDo5" onClick={() => window.scrollTo(0, 0)}>
-                <button className="mt-2 text-left text-gray-800 font-medium block">READ MORE</button></Link>
+                <button className="mt-4 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>
         </div>
 
@@ -81,8 +81,8 @@ return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex items-center w-full h-[190px]">
             <img src="/src/assets/Homepage/Gambar11.jpg" alt="Relaxing at Jimbaran Bay" className="w-[50%] h-full object-cover" />
                 <div className="p-4 w-[50%]">
-                    <h3 className="text-lg text-left font-bold text-gray-800">Relaxing at Jimbaran Bay</h3>
-                    <p className="mt-2 text-left font-light text-gray-600">Unwind on the serene shores of Jimbaran Bay, enjoy stunning sunsets, and savor fresh seafood by the beach.</p>
+                    <h3 className="text-lg text-left font-bold text-gray-800">KELINGKING BEACH</h3>
+                    <p className="mt-2 text-left font-light text-gray-600">Kelingking Beach is a breathtaking beach on Nusa Penida, famous for its T-Rex-shaped cliff.</p>
                     <Link to="/IsiThingsToDo6" onClick={() => window.scrollTo(0, 0)}>
                 <button className="mt-4 text-left text-gray-800 font-medium block">READ MORE</button></Link>
             </div>

@@ -8,11 +8,21 @@ const IsiTourPackage1 = () => {
     console.log(`This is id: ${id}`);
 
     useEffect(() => {
-        fetch(`http://localhost:8088/packagetour/${id}`)
+        if (!id) return;
+
+        setData(null);
+
+        fetch(`http://localhost:8088/packagetour/${id}?_=${new Date().getTime()}`)
         .then(res => res.json())
-        .then(data => setData(data))
-        .catch(err => console.log(err));
-    }, [])
+        .then(data => {
+            setData(data);
+            })
+        .catch(err => {
+            console.log(err);
+        });
+    }, [id])
+
+    console.log(dataPackage);
 
     const [formData, setFormData] = useState({
         name: "",
@@ -37,7 +47,7 @@ return (
     {/* Header */}
         <div className="relative">
             <img
-                src={dataPackage.length > 0 ? dataPackage[0].image : <p>Loading...</p>}
+                src={dataPackage ? (dataPackage[0]?.image) : (<p>Loading...</p>)}
                 alt="Tanah Lot Temple"
                 className="w-full h-[380px] object-cover"
             />
@@ -50,19 +60,19 @@ return (
         <div className="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Konten dibawah Header */}
         <div className="ml-0 md:ml-[-60px]">
-            <p className="text-gray-600 font-semibold text-lg mt-5">{dataPackage.length > 0 ? dataPackage[0].address : <p>Loading...</p>}</p>
-                <h2 className="text-2xl font-bold mt-1 mb-4">{dataPackage.length > 0 ? dataPackage[0].name_page : <p>Loading...</p>}</h2>
+            <p className="text-gray-600 font-semibold text-lg mt-5">{dataPackage ? (dataPackage[0]?.address) : (<p>Loading...</p>)}</p>
+                <h2 className="text-2xl font-bold mt-1 mb-4">{dataPackage ? (dataPackage[0]?.name_page) : (<p>Loading...</p>)}</h2>
                 <h3 className="text-base font-bold mt-0 mb-0">Description</h3>
             <p className="mt-1 text-gray-700 text-justify text-base">
-                {dataPackage.length > 0 ? dataPackage[0].description : <p>Loading...</p>}
+                {dataPackage ? (dataPackage[0]?.description) : (<p>Loading...</p>)}
             </p>
 
         <div className="flex flex-col md:flex-row justify-between mt-4">
             <div className="w-full md:w-1/2">
                 <h3 className="text-base font-bold mt-4">Destination</h3>
-                {dataPackage.length > 0 ? (
+                {dataPackage ? (
                     <ul className="list-disc pl-6 text-gray-700 text-base">
-                        {dataPackage[0].destination.split(", ").map((item, index) => (
+                        {dataPackage[0]?.destination.split(", ").map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
                     </ul>
@@ -178,44 +188,43 @@ return (
 
     {/* Popular Tour Packages Section */}
         <section className="py-16 px-6 md:px-16">
-                    <div className="max-w-7xl mx-auto text-center">
-                        <h2 className="mt-[-80px] text-3xl md:text-3xl font-semibold text-gray-800">Popular Tour Packages</h2>
-                            <p className="mt-2 text-2xl  text-gray-600">Handpicked Tours for Every Dream Vacation.</p>
-                    <div className="mt-8 grid md:grid-cols-3 gap-6">
+            <div className="max-w-7xl mx-auto text-center">
+                <h2 className="mt-[-80px] text-3xl md:text-3xl font-semibold text-gray-800">Popular Tour Packages</h2>
+                <p className="mt-2 text-2xl  text-gray-600">Handpicked Tours for Every Dream Vacation.</p>
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
         
-                    <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
-                        <img src="/src/assets/Homepage/Gambar6.jpg" alt="Tanah Lot" className="w-full h-48 object-cover" />
-                    <div className="p-4">
-                        <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
-                            <h3 className="text-lg text-left font-bold text-gray-800">LUHUR TANAH LOT TEMPLE</h3>
-                                <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                                <Link to="/IsiTourPackage1/1" onClick={() => window.scrollTo(0, 0)}>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
-                        </div>
-                    </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
+                <img src="/src/assets/Homepage/Gambar6.jpg" alt="Tanah Lot" className="w-full h-48 object-cover" />
+            <div className="p-4">
+                <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
+                    <h3 className="text-lg text-left font-bold text-gray-800">LUHUR TANAH LOT TEMPLE</h3>
+                        <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
+                        <Link to="/IsiTourPackage1/1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
+            </div>
         
-                    <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
-                        <img src="/src/assets/Homepage/Gambar7.jpg" alt="Uluwatu" className="w-full h-48 object-cover" />
-                    <div className="p-4">
-                        <p className="text-sm text-left font-light text-gray-600">Badung, Bali</p>
-                            <h3 className="text-lg text-left font-bold text-gray-800">ULUWATU TEMPLE</h3>
-                                <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                                <Link to="/IsiTourPackage1/2" onClick={() => window.scrollTo(0, 0)}>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
-                        </div>
-                    </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
+                <img src="/src/assets/Homepage/Gambar7.jpg" alt="Uluwatu" className="w-full h-48 object-cover" />
+            <div className="p-4">
+                <p className="text-sm text-left font-light text-gray-600">Badung, Bali</p>
+                    <h3 className="text-lg text-left font-bold text-gray-800">ULUWATU TEMPLE</h3>
+                        <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
+                        <Link to="/IsiTourPackage1/2" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
+            </div>
         
-                    <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
-                        <img src="/src/assets/Homepage/Gambar8.jpg" alt="Ulun Danu" className="w-full h-48 object-cover" />
-                    <div className="p-4">
-                        <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
-                            <h3 className="text-lg text-left font-bold text-gray-800">ULUN DANU BERATAN TEMPLE</h3>
-                                <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                                <Link to="/IsiTourPackage1/3" onClick={() => window.scrollTo(0, 0)}>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
-                        </div>
-                    </div>
-        
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
+                <img src="/src/assets/Homepage/Gambar8.jpg" alt="Ulun Danu" className="w-full h-48 object-cover" />
+            <div className="p-4">
+                <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
+                    <h3 className="text-lg text-left font-bold text-gray-800">ULUN DANU BERATAN TEMPLE</h3>
+                        <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
+                        <Link to="/IsiTourPackage1/3" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
+            </div>
         </div>
         </div>
     </section>

@@ -3,25 +3,23 @@ import { Link } from "react-router-dom";
 
 
 const BaliActivities = () => {
-     useEffect(() => {
+    useEffect(() => {
                 window.scrollTo(0, 0);
             }, []);
             
-  return (
+return (
     <div className="bg-[#EEEEEE]">
-      {/* Header */}
-      <div className="relative">
+    {/* Header */}
+        <div className="relative">
             <img
                 src="/src/assets/BaliTourPackage/Gambar1.jpg"
                 alt="Bali Vibes Hero"
                 className="w-full h-[380px] object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-center justify-center text-center text-white">
-          <p className="mt-3 font-playfair font-semibold text-3xl">
-            Bali Activities
-          </p>
+            <p className="mt-3 font-playfair font-semibold text-3xl">Bali Activities </p>
+            </div>
         </div>
-      </div>
 
     {/* Activities */}
     <section className="py-16 px-6 md:px-16">
@@ -37,8 +35,8 @@ const BaliActivities = () => {
                     <h3 className="text-lg text-left font-bold text-gray-800">BALI QUADBIKE TUBBING</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
                         <Link to="/Isibaliactivities1/1" onClick={() => window.scrollTo(0, 0)}>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
-                    </div>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
@@ -47,18 +45,20 @@ const BaliActivities = () => {
                 <p className="text-sm text-left font-light text-gray-600">Gianyar, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">BALI QUAD BIKE ATV</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
-                    </div>
+                        <Link to="/Isibaliactivities1/2" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
                 <img src="/src/assets/Bali Activities/Gambar4.jpg" alt="Dolphin Trip" className="w-full h-48 object-cover" />
             <div className="p-4">
-                <p className="text-sm text-left font-light text-gray-600">Buleleng, Bali</p>
+                <p className="text-sm text-left font-light text-gray-600">Klungkung, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">DOLPHIN TRIP</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
-                    </div>
+                        <Link to="/Isibaliactivities1/3" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
@@ -67,8 +67,9 @@ const BaliActivities = () => {
                 <p className="text-sm text-left font-light text-gray-600">Bangli, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">JEEP SUNRISE TOUR</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
-                    </div>
+                        <Link to="/Isibaliactivities1/4" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
@@ -77,8 +78,9 @@ const BaliActivities = () => {
                 <p className="text-sm text-left font-light text-gray-600">Tabanan, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">SNORKELING</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
-                    </div>
+                        <Link to="/Isibaliactivities1/5" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
@@ -87,8 +89,9 @@ const BaliActivities = () => {
                 <p className="text-sm text-left font-light text-gray-600">Klungkung, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">BALI SWING</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
-                    </div>
+                        <Link to="/Isibaliactivities1/6" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
@@ -97,8 +100,9 @@ const BaliActivities = () => {
                 <p className="text-sm text-left font-light text-gray-600">Karangasem, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">RAFTING UBUD</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
-                    </div>
+                        <Link to="/Isibaliactivities1/7" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
@@ -107,8 +111,9 @@ const BaliActivities = () => {
                 <p className="text-sm text-left font-light text-gray-600">Bangli, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">BATUR SUNRISE TREKKING</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
-                    </div>
+                        <Link to="/Isibaliactivities1/8" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group scale-90">
@@ -117,15 +122,15 @@ const BaliActivities = () => {
                 <p className="text-sm text-left font-light text-gray-600">Karangasem, Bali</p>
                     <h3 className="text-lg text-left font-bold text-gray-800">WATERBOOM BALI</h3>
                         <p className="mt-2 text-left text-[#006666]">Start From $50/PAX </p>
-                            <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button>
-                    </div>
+                        <Link to="/Isibaliactivities1/9" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="flex justify-start mt-8 bg-[#006666] hover:bg-[#006666] text-white font-semibold py-2 px-4 rounded-lg mr-auto">Detail</button></Link>
+                </div>
             </div>
-
-          </div>
-        </div>
-      </section>
+            </div>
+            </div>
+        </section>
     </div>
-  );
+);
 };
 
 export default BaliActivities;
